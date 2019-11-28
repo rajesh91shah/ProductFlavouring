@@ -22,5 +22,8 @@ step 6: add corresponding
 step 7: access the url as base on Bundle.main.infoDictionary?["BaseUrl"] as! String
 
 //// *** PODS HANDLING ***///
+
+Working with URL’s
+If you are working with the URL’s than use $() as escape character. I was trying hard to find out a solid solution for this but not able to find out , will update it as soon as i will found a solution for this.
         
 
