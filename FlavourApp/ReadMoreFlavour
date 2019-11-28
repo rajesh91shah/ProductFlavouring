@@ -1,3 +1,26 @@
 
 //What are xcconfig files ?
 A build configuration file, also known as an xcconfig file, is a plain text file that defines and overrides the build settings for a particular build configuration of a project or target.
+
+Step 1 : Add Configure folder(group) add configur file which is available in other section , file name 'configuration setting file' 1. DevMode 2. ProductionMode
+Step 2 : select the xprojfile and select project -> info -> configuration
+            1. configure debug -> with DevMode configuration file
+            2. configure release mode with the ProdMode Configred file
+            
+step 3 : open devMode.xconfig/ ProdMode.xconfig file and add property to access the property as base on Flavoure of the App
+    eg. BASEURL = testBaseURL // devMOde.xcconfig
+    
+step 4 : add defrent scheme for defrent flavour  (new scheme)
+
+step 5: Edit Scheme dedug for Debug scheme/ and release for ProdScheme
+
+step 6: add corresponding
+        Value: $(BASEURL)
+        Key: BaseUrl
+        Type: String
+        
+step 7: access the url as base on Bundle.main.infoDictionary?["BaseUrl"] as! String
+
+//// *** PODS HANDLING ***///
+        
+
