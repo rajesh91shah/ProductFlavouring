@@ -1,0 +1,3 @@
+
+//What are xcconfig files ?
+A build configuration file, also known as an xcconfig file, is a plain text file that defines and overrides the build settings for a particular build configuration of a project or target.
